@@ -1,6 +1,11 @@
 body {
   font-family: "Montserrat-thin", sans-serif;
+  text-align: center;
 }
+/* .......................................................... */
+
+/* title section */
+
 .navbar-brand {
   font-family: "Ubuntu";
   font-size: 2.5rem;
@@ -13,26 +18,30 @@ body {
 .navbar {
   padding-bottom: 4.5rem;
 }
-.title-image {
-  width: 60%;
-  transform: rotate(20deg);
-}
-@media (max-width: 1000px) {
-  #title {
-    text-align: center;
-  }
-  .title-image {
-    transform: rotate(0);
-    margin-top: 3rem;
-  }
-}
-
 #title {
   background-color: #ff4c68;
+  text-align: left;
 }
+.title-image {
+  width: 20%;
+  transform: rotate(25deg);
+  position: absolute;
+  right: 20%;
+}
+/* .......................................................... */
+
+/* Features Section */
+
+#features {
+  background-color: #fff;
+  padding: 7% 15%;
+  position: relative;
+}
+
 .container-fluid {
   padding: 3% 15%;
 }
+
 h1 {
   font-family: "Montserrat", sans-serif;
   font-weight: 900;
@@ -44,13 +53,9 @@ h1 {
 .download-btn {
   margin: 5% 3% 5% 0;
 }
-.white-section {
-  background-color: #fff;
-  padding: 7% 15%;
-}
+
 .feature-Box {
   padding: 5%;
-  text-align: center;
 }
 .feature-Box h3 {
   font-family: "Montserrat", sans-serif;
@@ -71,7 +76,6 @@ h1 {
 #testimonials {
   background-color: #ef8172;
   color: #fff;
-  text-align: center;
 }
 .carousel-item {
   padding: 7% 20%;
@@ -86,20 +90,25 @@ h1 {
   border-radius: 100%;
   padding: 15px 0px;
 }
+
+/* .......................................................... */
+
+/* press  */
 #press {
   background-color: #ef8172;
   padding: 5% 10%;
-  text-align: center;
 }
 .press-image {
   width: 20%;
 }
 
+/* .......................................................... */
+
 /* Call to Action */
 
 #cta {
   background-color: #ff4c68;
-  text-align: center;
+
   padding: 7% 25%;
   color: #fff;
 }
@@ -108,15 +117,12 @@ h1 {
   font-size: 2.5rem;
   line-height: 1.5;
 }
+/* .......................................................... */
 
 /* pricing */
 
 #pricing {
-  text-align: center;
   padding: 7% 15%;
-}
-#pricing h3 {
-  font-size: 2rem;
 }
 .price-cmt {
   margin-bottom: 10%;
@@ -125,14 +131,44 @@ h1 {
   font-size: 2.5rem;
   font-weight: bold;
 }
+.price-card {
+  padding-bottom: 10px;
+}
 
 /* footer */
 
 #footer {
-  text-align: center;
   padding: 7% 25%;
   font-size: 1rem;
 }
 .footer-icon {
   color: red;
 }
+.footer-icon:hover {
+  font-size: x-large;
+}
+.social-icon {
+  padding: 8px;
+  margin-bottom: 10px;
+}
+.social-icon:hover {
+  color: #ff4c68;
+  cursor: pointer;
+}
+/* .......................................................... */
+
+@media (max-width: 1028px) {
+  #title {
+    text-align: center;
+  }
+  .navigation {
+    text-align: left;
+  }
+
+  .title-image {
+    position: static;
+    width: 40%;
+    transform: rotate(0);
+  }
+}
+/* .......................................................... */
